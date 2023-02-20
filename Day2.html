@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li{
+        padding-left: 180px;
+        margin-top: 40px;
+        position: relative;
+        top: 13px;
+        display: inline;
+    }
+    .first{
+        height: 550px;
+        width: 100%;
+        background-color: grey;
+    }
+    .img1{
+        height: 500px;
+        width: 450px;
+        position: relative;
+        left: 790px;
+    }
+    h1{
+        font-size: 54px;
+        font-family: sans-serif;
+    }
+    p{
+        font-family: sans-serif;
+    }
+    .bt{
+        background-color: rgb(255, 224, 50);
+        border: none;
+        border-radius: 30px;
+        width: 140px;
+        height: 40px;
+    }
+    .fr_one{
+        position: relative;
+        bottom: 410px;
+        margin-left: 40px;
+    }
+    em{
+        color: red;
+        font-family: sans-serif;
+    }
+    .style{
+        height: 280px;
+        width: 350px;
+        border-radius:30px ;
+        color: white;
+        position: relative;
+        bottom: -150px;
+        left: 250px;
+        background-color: rgb(0, 0, 0);
+    }
+    nav{
+        background-color: black;
+        color: white;
+        height: 50px;
+        z-index: -9;
+        position: relative;
+        align-items: center;
+        top: 0px;
+        margin-top: 0px;
+    }
+    .bed{
+        background-color: rgb(128, 128, 128, 0.168);
+        height: 1000px;
+        position: relative;
+        top: -380px;
+        width: 100%;
+        z-index: -2;
+    }
+    .style1{
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        width: 350px;
+        height: 50px;
+        color: black;
+        left: 0px;
+        bottom: 264px;
+        z-index: 5;
+        position: relative;
+    }
+    .text{
+        position: relative;
+        top: 10px;
+        text-align: center;
+    }
+    .but1{
+        display: flex;
+        margin-top: 120px;
+        position: relative;
+        width: 350px;
+        bottom: -40px;
+        border: none;
+        height: 80px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    .but2{
+        display: flex;
+        /* margin-top: 120px; */
+        position: relative;
+        width: 350px;
+        bottom: -40px;
+        height: 80px;
+        border: none;
+        background-color: rgb(0, 0, 0);
+        color: white;
+
+    }
+    .but3{
+        display: flex;
+        position: relative;
+        /* margin-top: 120px; */
+        width: 350px;
+        bottom: -40px;
+        color: white;
+        height: 80px;
+        border-radius: 0px 0px 30px 30px;
+        border: none;
+        background-color: rgb(0, 0, 0);
+    }
+    .sam1{
+        display: inline;
+    }
+    .enter{
+        width: 240px;
+        height: 52px;
+        position: relative;
+        left: 520px;
+        top: -240px;
+        border-radius: 30px 0px 0px 30px;
+        border: none;
+    }
+    #net{
+        width: 60px;
+        border-radius: 0px 30px 30px 0px;
+        background-color: grey;
+        position: relative;
+        left: 765px;
+        top: -294px;
+        height: 54.2px;
+    }
+    #net1{
+        height: 50px;
+        width: 50px;
+    }
+    .ort{
+        width: 140px;
+        height: 40px;
+        position: relative;
+        top:80px;
+        border-radius: 30px;
+        background-color: gold;
+        border: none;
+        left: -240px;
+    }
+    .bot {
+        display: grid;
+        gap: 20px;
+        background-color: rgba(128, 128, 128, 0.168);
+        z-index: -3;
+        position: relative;
+        height: 800px;
+        top: -380px;
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows:300px;
+    }
+    .bot1 {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows:300px;
+    }
+    .cool{
+        background-color: rgb(255, 255, 255);
+        border-radius: 40px 40px 0px 0px;
+        height: 200px;
+        width: 260px;
+        position: relative;
+        top: 310px;
+        z-index: -1;
+    }
+    .cool1{
+        margin-left: 20px;
+        background-color: rgba(255, 255, 255, 0.998);
+        border-radius: 40px;
+        height: 330px;
+        width: 260px;
+        bottom: -190px;
+        position: relative;
+        z-index: 1;
+    }
+    .one{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .two{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .three{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .four{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .iimg{
+        background-image: url();
+    }
+    #image{
+        position: relative;
+        left: 30px;
+        height: 190px;
+        width: 190px;
+    }
+    #low{
+        height: 150px;
+        background-color: rgb(128, 128, 128);
+        width: 260px;
+        top: -20px;
+        border-radius: 0px 0px 40px 40px ;
+        position: relative;
+        z-index: 1;
+    }
+    #low2{
+        height: 150px;
+        background-color: rgb(128, 128, 128);
+        width: 260px;
+        border-radius: 0px 0px 40px 40px ;
+        position: relative;
+        bottom: 10px;
+        z-index: 1;
+    }
+    #butt{
+        position: relative;
+        bottom: -15px;
+        width: 190px;
+        height: 35px;
+        border-radius: 30px;
+        border: none;
+        background-color: rgb(255, 217, 0);
+        margin-left: 35px;
+    }
+    h4{
+        font-size: 20px;
+        margin-left: 15px;
+        position: relative;
+        top: 20px;
+        padding-top: 10px;
+        font-family: sans-serif;
+    }
+    .bla{
+        height: 600px;
+        position: relative;
+        bottom: 380px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.423);
+    }
+    .tol{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        background-color: gold;
+        bottom: 380px;
+    }
+    #squ{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        left: 170px;
+        background-color: gold;
+    }
+    .pre{
+        font-family: sans-serif;
+        position: relative;
+        font-size: 30px;
+        font-weight: bolder;
+        top: -280px;
+        left: 530px;
+    }
+    .ft{
+        display: flex;
+        justify-content: space-between;
+    }
+    #mar{
+        width: 90px;
+        height: 90px;
+        z-index: 3;
+    }
+    .ig{
+        height: 200px;
+        width: 260px;
+        position: relative;
+        top: 0px;
+        border-radius: 40px 40px 0px 0px;
+    }
+    #he{
+        transform: rotate(90deg);
+        width: 45px;
+        font-weight: bolder;
+    }
+    #middle{
+        position: relative;
+        left: -90px;
+        width: 1000px;
+    }
+    #path{
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.659);
+        position: relative;
+        left:240px;
+    }
+    #head{
+        position: relative;
+        top: 230px;
+        width: 200%;
+        left: 250px;
+        color: black;
+    }
+    .buttons{
+        width: 100%;
+        position: relative;
+    }
+    #piw {
+        width: 50px;
+        background-color: gold;
+        border: none;
+        border-radius: 30px;
+        height: 30px;
+    }
+    #piw {
+        width: 50px;
+        background-color: gold;
+        border: none;
+        border-radius: 30px;
+        height: 30px;
+    }
+    #piw {
+        width: 50px;
+        background-color: gold;
+        border: none;
+        border-radius: 30px;
+        position: relative;
+        left: -200px;
+        top: 290px;
+        height: 40px;
+    }
+    #piw1 {
+        width: 150px;
+        color: gold;
+        background-color: rgb(99, 91, 91);
+        border: none;
+        border-radius: 30px;
+        height: 40px;
+        position: relative;
+        left: -150px;
+        top: 290px;
+    }
+    #piw2 {
+        width: 90px;
+        color: gold;
+        background-color: rgb(99, 91, 91);
+        border: none;
+        border-radius: 30px;
+        height: 40px;
+        position: relative;
+        left: -90px;
+        top: 290px;
+    }
+    #piw3 {
+        width: 170px;
+        color: gold;
+        background-color: rgb(99, 91, 91);
+        border: none;
+        border-radius: 30px;
+        height: 40px;
+        position: relative;
+        left: 280px;
+        top: 250px;
+    }
+    #piw4 {
+        width: 200px;
+        color: gold;
+        background-color: rgb(99, 91, 91);
+        border: none;
+        border-radius: 30px;
+        height: 40px;
+        position: relative;
+        left: 560px;
+        top: 215px;
+    }
+    #piw5 {
+        width: 90px;
+        color: gold;
+        background-color: rgb(99, 91, 91);
+        border: none;
+        border-radius: 30px;
+        height: 40px;
+        position: relative;
+        left: 625px;
+        top: 215px;
+    }
+    #itc {
+        height: 40px;
+        width: 140px;
+        position: relative;
+        top: 36px;
+        left: 270px;
+    }
+    #itc1 {
+        height: 40px;
+        width: 140px;
+        position: relative;
+        top: -26px;
+        left: 590px;
+    }
+    .he{
+        transform: rotate(90deg);
+        width: 30px;
+        position: relative;
+        left: -300px;
+        top: 380px;
+    }
+    #tut{
+        height: 20px;
+        position: relative;
+        left: 80px;
+        top: 26px;
+    }
+    #master{
+        height: 40px;
+        width: 90px;
+    }
+    .last{
+        position: relative;
+        right: 340px;
+        top: 65px;
+
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Team</li>
+        </ul>
+    </nav>
+    <div class="first">
+        <img class="img1" src="shopping.png" alt="">
+        <div class="fr_one">
+            <h1>Say hello to <br> the new <em>QuickCart.</em> </h1>
+            <p >Food Delivery Grocery Delivery Rides</p>
+            <br><br>
+            <button class="bt">Shop Now</button>
+        </div>
+        <div class="bed">
+        <div class="style">
+            <div class="sam1">
+            <button class="but1">Fruit</button>
+            <button class="but2">Cherry</button>
+            <button class="but3">Fish</button>
+        </div>
+        <div class="iimg">
+        <div class="style1"><p>What would you like to buy</p></div>
+        <div>
+            <input class="enter" type="text" placeholder="          Enter your option">
+            <div id="net">
+                <img id="net1" src="loc.png" alt="">
+
+
+                <button class="ort">Get Started</button>
+            </div>
+        </div>
+        <p id="path">It get's even better with the app</p>
+
+        <div id="middle">
+        <img id="itc" src="googl.png" alt=""><hr id="he">
+        <img id="itc1" src="apple.png" alt="">
+    </div>
+    </div>
+    <div class="buttons">
+    <h1 id="head">Special Offers</h1><hr class="he">
+    <button id="piw">All</button>
+    <button id="piw1">Vegetables</button>
+    <button id="piw2">Fruits</button>
+    <button id="piw3">Frozen fruits</button>
+    <button id="piw4">Grocery</button>
+    <button id="piw5">Milk</button>
+</div>
+    </div>
+</div>
+  
+
+    <div class="bot">
+        <div class="one cool">
+            <img id="image" src="gab.jpeg" alt="">
+            <div id="low"><h4>Gabage</h4>
+            <button id="butt">Add to cart</button>
+        </div>
+            
+        </div>
+        <div class="two cool">
+            <img id="image" src="onions.jpg" alt="">
+            <div id="low">
+                <h4>Onions</h4>
+                <button id="butt">Add to cart</button>
+            </div>
+        </div>
+        <div class="three cool">
+            <img id="image" src="Banana.jpg" alt="">
+            <div id="low">
+                <h4>Banana</h4>
+                <button id="butt">Add to cart</button>
+            </div>
+
+        </div>
+        <div class="four cool">
+            <img id="image" src="eggs.png" alt="">
+            <div id="low">
+            <h4>Eggs</h4>
+            <button id="butt">Add to cart</button>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bla">
+        
+
+    <div class="bot1">
+        <pre class="pre">       Newly Added <br> Restaurant & Stores</pre>
+        <div class="one cool1">
+           <img class="ig" src="mark1.jpg" alt="">
+            <div id="low2">
+                
+                <div id="squ">
+                    <img id="mar" src="loc.png" alt="">
+                </div>
+                <img id="tut" src="star.jpg" alt="">
+            </div>
+        </div>
+        <div class="two cool1">
+            <img class="ig" src="mark2.jpg" alt="">
+            <div id="low2">
+                <div id="squ">
+                    <img id="mar" src="loc.png" alt="">
+                </div>
+                <img id="tut" src="star.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="three cool1">
+            <img class="ig" src="mark3.jpg" alt="">
+            <div id="low2">
+                <div id="squ">
+                    <img id="mar" src="loc.png" alt="">
+                </div>
+                <img id="tut" src="star.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="four cool1">
+            <img class="ig" src="mark4.jpg" alt="">
+            <div id="low2">
+                <div id="squ">
+                    <img id="mar" src="loc.png" alt="">
+                </div>
+                <img id="tut" src="star.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="tol">
+        <div class="ft">
+            <p class="text"><strong>QuickCart</strong> <br> Lorem ipsum, dolor sit amet consectetur<br>  adipisicing elit. Fugiat eaque provident <br> reiciendis facilis. Dolores, maiores ipsum.<br> Eos, dolorem. Necessitatibus<br> cumque quo alias nesciunt consectetur <br> error odit? Inventore ipsam necessitatibus</p>
+            <p class="text"><strong>About</strong><br> <br> This web is nic <br><br>My web of itth <br><br>Check us now</p>
+            <p class="text"><strong>Team</strong><br><br> Lagos <br> <br> Niger</p>
+            <p class="text"><strong>Contact us</strong><br><br><br><br><br> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elist. <br> Earum, maiores Lorem ipsm.</p>
+            <div class="last">
+                <img id="master" src="visa.png" alt="">
+                <img id="master" src="mastcard.png" alt="">
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
